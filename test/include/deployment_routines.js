@@ -36,3 +36,10 @@ async function ai_protocol_erc721_deploy_restricted(a0, name = "Revenants by AI 
     // deploy and return the reference to instance
     return await ALINFT.new(name, symbol, { from: a0 });
 }
+
+
+// export public deployment API
+module.exports = {
+    ai_protocol_erc721_deploy_restricted,
+    ai_protocol_erc721_deploy
+};
